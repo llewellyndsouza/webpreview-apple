@@ -1,0 +1,112 @@
+html{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  background: #9FBBD1
+    url(https://web.archive.org/web/20140228114747im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+    background-size: cover;
+}
+
+nav {
+  grid-column: 2;
+  margin: 80px 20px;
+  padding: 0 20px 0 0;
+  display: flex;
+  height: 30px;
+  align-items: stretch;
+  border-radius: 4px;
+  background: linear-gradient(
+    to bottom,
+    #4c4c4c 0%,
+    #727272 12%,
+    #898989 25%,
+    #6b6b6b 39%
+  );
+}
+
+nav > * {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 0.8em;
+}
+
+nav > button:hover {
+  background: radial-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.521));
+}
+
+nav > .searchbox {
+  align-self: center;
+  padding: 0 10px 0 10px;
+  border-right: 0;
+}
+
+.searchbox > input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 0 0 20px;
+  background: url(https://www.iconsdb.com/icons/preview/white/search-13-xxl.png) 5% 50% no-repeat;
+  background-size: contain;
+  color: white;
+}
+
+.billboard {
+  grid-column: 2;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 200;
+  margin: 0.75rem 15%;
+}
+
+.subtitle {
+  font-size: 2em;
+}
+
+.watch {
+  font-size: 1.5em;
+  margin-bottom: 300px;
+}
+
+.content {
+  margin: 2px 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+}
+
+.content > * {
+  width: 100%;
+}
+
+footer {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: initial;
+}
+
+footer * {
+  font-size: 10px;
+  color: #727272;
+}
+
+.sitemap {
+  display: flex;
+  list-style: none;
+  justify-self: end;
+}
+
+.sitemap > li {
+  padding: 0 5px;
+  border-right: 1px solid #6b6b6b;
+}
+
+.sitemap > li:last-child {
+  border-right: 0;
+}
